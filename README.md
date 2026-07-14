@@ -1,62 +1,94 @@
-# Highlightly GitHub Pages website
+# Highlightly
 
-A static landing page for Highlightly, ready to publish with GitHub Pages.
+Highlightly is a browser extension for saving important information from the web.
 
-## Included
+It lets you highlight text on webpages, attach notes, organize highlights into projects, and return to the original source later.
 
-- Product landing page
-- Features and workflow
-- Free and Plus pricing
-- Privacy policy
-- Terms of use
-- Refund policy
-- Responsive design
-- No backend or database required
+## Features
 
-## Before publishing
+- Highlight selected text in multiple colors
+- Add notes to highlights
+- View notes by hovering over highlighted text
+- Edit notes directly from the webpage
+- Remove highlights from the webpage or library
+- Keep highlights after refreshing a page
+- View highlights from the current page in the extension popup
+- Search, edit, delete, and reopen highlights from the library
+- Remove all highlights and notes from a page at once
+- Export highlights to Markdown
 
-Use search and replace in all files for:
+## Organization
 
-1. `YOUR_EMAIL@example.com`
-   - Replace this with your real support email.
+New highlights are saved to the **Inbox** by default.
 
-2. `YOUR_EXTENSION_STORE_URL`
-   - Replace this with the public Chrome Web Store, Edge Add-ons, Firefox Add-ons, or installation-page link.
-   - While the extension is not published yet, you can temporarily change the button to `href="#"`.
+With Highlightly Plus, highlights can also be organized into projects. Projects can contain highlights from different websites and are useful for things such as:
 
-3. `REPLACE_WITH_DATE`
-   - Replace this with the date on which you publish the policies, for example `15 July 2026`.
+- School research
+- Travel planning
+- Competitor research
+- Work projects
 
-Also check that the price, trial period, feature limits, refund period, and payment description match your actual product setup.
+A highlight can belong to multiple projects. Projects can be renamed or deleted without deleting the highlights inside them.
 
-## Publish with GitHub Pages
+## Colors
 
-1. Create a new public GitHub repository, for example `highlightly-site`.
-2. Upload all files from this folder to the root of the repository.
-3. Open the repository on GitHub.
-4. Go to **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select branch **main** and folder **/(root)**.
-7. Save the settings.
-8. GitHub will provide a public URL similar to:
-   `https://YOUR_GITHUB_USERNAME.github.io/highlightly-site/`
+Highlightly includes four standard colors:
 
-You can then use that public URL in Stripe.
+- Yellow
+- Green
+- Blue
+- Pink
 
-## Local preview
+Highlightly Plus also allows custom colors with names such as `Quote`, `Important`, or `Follow up`.
 
-Open `index.html` directly in your browser, or run a simple local server:
+## Privacy
 
-```bash
-python -m http.server 8000
-```
+Highlightly is local-first.
 
-Then open:
+Highlights, notes, projects, colors, and settings are stored in the browser. No account is required for the free version.
 
-```text
-http://localhost:8000
-```
+More information is available in the [Privacy Policy](privacy.html).
 
-## Important
+## Pricing
 
-The included legal pages are practical templates, not legal advice. Review them and adapt them to your actual business, location, payment flow, and data practices before publishing.
+### Free
+
+- Up to 100 highlights
+- Four standard colors
+- Inbox
+- Search
+- Notes
+- Basic Markdown export
+
+### Highlightly Plus — €4.99 one-time
+
+- Unlimited highlights
+- Projects
+- Custom colors
+- Export per project
+- Seven-day free trial for new installations
+
+## Website
+
+This repository contains the official Highlightly product website.
+
+The website is built with plain HTML, CSS, and JavaScript and is hosted with GitHub Pages.
+
+## Pages
+
+- [Home](index.html)
+- [Privacy Policy](privacy.html)
+- [Terms of Use](terms.html)
+- [Refund Policy](refunds.html)
+
+## Status
+
+The Highlightly interface, Plus features, trial system, payment page, and access rules are implemented.
+
+Live payments still require the ExtensionPay account and Stripe product to be connected. The registered ExtensionPay ID must then be added to `payment-config.js`.
+
+## Contact
+
+For support or questions:
+
+`emile.vandewaetere@gmail.com`
